@@ -95,17 +95,18 @@
   <main class="container">
     <header>
       <h1>무한 사칙연산 (Infinity Calc) 개인정보처리방침</h1>
-      <div class="meta">개정일자: 2026년 5월 27일 · 운영자: areyoupasta</div>
+      <div class="meta">개정일자: 2026년 5월 27일 (v2) · 운영자: areyoupasta</div>
     </header>
 
     <div class="summary">
-      <strong>요약</strong> — 본 앱은 광고, 추적, 분석 SDK를 포함하지 않으며,
-      어떠한 사용자 데이터도 외부로 전송하지 않습니다. 모든 학습 통계와
-      설정값은 사용자의 단말기 내부 저장소에만 보관됩니다.
+      <strong>요약</strong> — 본 앱은 무료 사용을 위해
+      <strong>Google AdMob 배너 광고</strong>를 표시합니다. 학습 통계와 설정값은
+      사용자 단말기 내부에만 저장되며 외부로 전송되지 않습니다. 본 앱은 사용자
+      추적이나 분석을 위한 별도 SDK 를 사용하지 않으며, AdMob 이 광고 표시
+      과정에서 수집하는 정보는 아래에 자세히 안내합니다.
     </div>
 
-    <h2>1. 수집하는 정보</h2>
-    <p>본 앱은 다음 정보를 단말기 내부에만 저장합니다.</p>
+    <h2>1. 본 앱이 단말기에 저장하는 정보</h2>
     <ul>
       <li><strong>학습 통계</strong>: 누적 문제 수, 정답 수, 정답률,
         현재·최고 연속 정답 기록, 누적 풀이 시간.</li>
@@ -113,49 +114,77 @@
         나눗셈 모드, 소수점 자릿수, 자동 진행 여부, 햅틱/사운드 여부,
         테마 모드 등.</li>
     </ul>
-    <p>위 정보는 Android의 <code>SharedPreferences</code> 영역에
-      저장되며, 본 앱 외부의 어떤 서버나 제3자에게도 전송되지 않습니다.</p>
+    <p>위 정보는 Android 의 <code>SharedPreferences</code> 영역에 저장되며,
+      본 앱의 외부 서버나 제3자에게 전송되지 않습니다.</p>
 
-    <h2>2. 수집하지 않는 정보</h2>
+    <h2>2. 광고를 통해 수집/처리되는 정보 (Google AdMob)</h2>
+    <p>본 앱은 <a href="https://admob.google.com/" target="_blank"
+      rel="noopener">Google AdMob</a> 의 배너 광고를 메인 화면 하단에
+      표시합니다. AdMob 은 광고를 게재하기 위해 다음 정보를 자동으로
+      처리할 수 있습니다.</p>
     <ul>
-      <li>이름, 이메일, 전화번호, 주소 등 개인 식별 정보</li>
-      <li>위치 정보(GPS), 연락처, 카메라, 마이크, 사진 등 단말기 자원</li>
-      <li>광고 식별자(Advertising ID), 단말기 식별자(IMEI, MAC 등)</li>
-      <li>크래시 로그, 사용 분석 데이터, 광고 클릭 데이터</li>
+      <li>Android 광고 ID (Advertising ID)</li>
+      <li>IP 주소 및 대략적인 위치 정보 (국가/지역 수준)</li>
+      <li>단말기 모델·OS 버전·언어·시간대</li>
+      <li>광고 노출 및 클릭 이벤트</li>
+    </ul>
+    <p>위 정보는 Google 의 개인정보처리방침에 따라 처리되며, 자세한 내용은
+      아래 링크를 참고해 주세요.</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank"
+        rel="noopener">Google 개인정보처리방침</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543"
+        target="_blank" rel="noopener">AdMob 이 수집·사용하는 데이터</a></li>
     </ul>
 
-    <h2>3. 사용 권한</h2>
-    <p>본 앱은 어떠한 Android 권한도 요청하지 않습니다.
-      네트워크 통신을 위한 <code>INTERNET</code> 권한 또한 선언되어 있지
-      않습니다.</p>
-
-    <h2>4. 제3자 정보 제공 및 SDK</h2>
-    <p>본 앱은 어떠한 광고, 추적, 분석 SDK도 포함하지 않습니다.
-      따라서 제3자에게 제공되는 정보가 존재하지 않습니다.</p>
-
-    <h2>5. 사용자 데이터에 대한 권리</h2>
-    <p>본 앱에 저장된 모든 데이터는 사용자가 직접 삭제할 수 있습니다.</p>
+    <h2>3. 본 앱이 수집하지 않는 정보</h2>
     <ul>
-      <li>앱 내 설정에서 <strong>통계 초기화</strong>를 실행하면
-        누적 통계가 즉시 0으로 재설정됩니다.</li>
+      <li>이름, 이메일, 전화번호, 주소 등 본 앱이 직접 묻는 개인 식별 정보</li>
+      <li>정확한 위치 정보(GPS), 연락처, 카메라, 마이크, 사진 등 단말기 자원</li>
+      <li>크래시 로그, 사용 분석 데이터 (별도 분석 SDK 미사용)</li>
+    </ul>
+
+    <h2>4. 사용 권한</h2>
+    <ul>
+      <li><strong>INTERNET</strong> — 광고를 불러오기 위해 사용. 본 앱은 학습
+        데이터를 인터넷으로 전송하지 않습니다.</li>
+      <li><strong>com.google.android.gms.permission.AD_ID</strong> — AdMob 이
+        광고 ID 를 읽기 위해 사용. Android 설정에서 사용자가 언제든
+        재설정/제한 가능합니다.</li>
+    </ul>
+
+    <h2>5. 제3자 SDK</h2>
+    <ul>
+      <li><strong>Google AdMob (google_mobile_ads)</strong> — 광고 게재.</li>
+    </ul>
+    <p>위 외의 추적/분석/광고 네트워크 SDK 는 포함되어 있지 않습니다.</p>
+
+    <h2>6. 사용자 데이터에 대한 권리</h2>
+    <ul>
+      <li>앱 내 설정에서 <strong>통계 초기화</strong>를 실행하면 단말기에
+        저장된 누적 통계가 즉시 0 으로 재설정됩니다.</li>
       <li>Android 설정 → 애플리케이션 → <em>무한 사칙연산 (Infinity Calc)</em>
-        → 저장공간 → <strong>데이터 삭제</strong>를 실행하면
-        설정값과 통계가 모두 영구 삭제됩니다.</li>
-      <li>앱을 삭제하면 단말기에 저장된 모든 데이터도 함께 삭제됩니다.</li>
+        → 저장공간 → <strong>데이터 삭제</strong>를 실행하면 설정값과 통계가
+        모두 영구 삭제됩니다.</li>
+      <li>Android 설정 → 개인정보 → 광고 → <strong>광고 ID 재설정</strong>
+        또는 <strong>광고 ID 삭제</strong> 를 실행하면 광고 개인 맞춤이
+        리셋/비활성화됩니다.</li>
+      <li>앱을 삭제하면 단말기에 저장된 본 앱 관련 데이터가 모두 삭제됩니다.
+        AdMob 이 보관하는 광고 식별자/이력은 Google 의 개인정보처리방침에
+        따라 처리됩니다.</li>
     </ul>
 
-    <h2>6. 아동 보호</h2>
-    <p>본 앱은 만 13세 미만 아동을 주된 대상으로 하지 않으나,
-      광고와 외부 데이터 송신이 없으므로 모든 연령에서 안전하게 이용할 수
-      있습니다.</p>
+    <h2>7. 아동 보호</h2>
+    <p>본 앱은 만 13세 미만 아동을 주된 대상으로 하지 않습니다. AdMob 광고는
+      Google Play 의 콘텐츠 등급(전체 이용가) 에 맞추어 가족 친화적
+      (Family-friendly) 광고만 게재되도록 설정되어 있습니다.</p>
 
-    <h2>7. 정책 변경</h2>
-    <p>본 방침이 변경될 경우 이 페이지의 개정일자가 갱신됩니다.
-      중요한 변경 사항이 있을 경우 앱 업데이트 노트에 함께 안내합니다.</p>
+    <h2>8. 정책 변경</h2>
+    <p>본 방침이 변경될 경우 이 페이지의 개정일자가 갱신됩니다. 중요한 변경
+      사항은 앱 업데이트 노트에 함께 안내합니다.</p>
 
-    <h2>8. 문의</h2>
-    <p>본 방침이나 앱과 관련된 문의는 GitHub Issues를 통해 접수해
-      주시기 바랍니다.</p>
+    <h2>9. 문의</h2>
+    <p>본 방침이나 앱과 관련된 문의는 GitHub Issues 를 통해 접수해 주세요.</p>
     <ul>
       <li>GitHub Issues:
         <a href="https://github.com/Sevring/infinitycal/issues"
@@ -166,9 +195,9 @@
     </ul>
 
     <footer>
-      이 문서는 <a href="https://github.com/Sevring/infinitycal"
-        target="_blank" rel="noopener">Sevring/infinitycal</a>
-      저장소의 <code>docs/privacy/index.html</code> 에서 관리됩니다.
+      이 문서는 <a href="https://github.com/Sevring/infinitycal-public"
+        target="_blank" rel="noopener">Sevring/infinitycal-public</a>
+      저장소의 <code>privacy/index.html</code> 에서 관리됩니다.
     </footer>
   </main>
 </body>
