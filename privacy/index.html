@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>무한 사칙연산 (Infinity Calc) 개인정보처리방침</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --accent: #3f51b5;
+      --border: #e0e0e0;
+      --code-bg: #f5f5f7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --fg: #ececec;
+        --muted: #b0b0b0;
+        --accent: #9fa8da;
+        --border: #2c2c2c;
+        --code-bg: #1e1e1e;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans KR", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin: 0 0 8px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 32px 0 8px;
+      color: var(--accent);
+    }
+    p, li {
+      color: var(--fg);
+    }
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 22px; }
+    ul li + li { margin-top: 4px; }
+    .summary {
+      background: var(--code-bg);
+      border-left: 3px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 4px;
+      margin: 16px 0 24px;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>무한 사칙연산 (Infinity Calc) 개인정보처리방침</h1>
+      <div class="meta">개정일자: 2026년 5월 27일 · 운영자: areyoupasta</div>
+    </header>
+
+    <div class="summary">
+      <strong>요약</strong> — 본 앱은 광고, 추적, 분석 SDK를 포함하지 않으며,
+      어떠한 사용자 데이터도 외부로 전송하지 않습니다. 모든 학습 통계와
+      설정값은 사용자의 단말기 내부 저장소에만 보관됩니다.
+    </div>
+
+    <h2>1. 수집하는 정보</h2>
+    <p>본 앱은 다음 정보를 단말기 내부에만 저장합니다.</p>
+    <ul>
+      <li><strong>학습 통계</strong>: 누적 문제 수, 정답 수, 정답률,
+        현재·최고 연속 정답 기록, 누적 풀이 시간.</li>
+      <li><strong>앱 설정값</strong>: 출제 연산자, 자릿수 범위,
+        나눗셈 모드, 소수점 자릿수, 자동 진행 여부, 햅틱/사운드 여부,
+        테마 모드 등.</li>
+    </ul>
+    <p>위 정보는 Android의 <code>SharedPreferences</code> 영역에
+      저장되며, 본 앱 외부의 어떤 서버나 제3자에게도 전송되지 않습니다.</p>
+
+    <h2>2. 수집하지 않는 정보</h2>
+    <ul>
+      <li>이름, 이메일, 전화번호, 주소 등 개인 식별 정보</li>
+      <li>위치 정보(GPS), 연락처, 카메라, 마이크, 사진 등 단말기 자원</li>
+      <li>광고 식별자(Advertising ID), 단말기 식별자(IMEI, MAC 등)</li>
+      <li>크래시 로그, 사용 분석 데이터, 광고 클릭 데이터</li>
+    </ul>
+
+    <h2>3. 사용 권한</h2>
+    <p>본 앱은 어떠한 Android 권한도 요청하지 않습니다.
+      네트워크 통신을 위한 <code>INTERNET</code> 권한 또한 선언되어 있지
+      않습니다.</p>
+
+    <h2>4. 제3자 정보 제공 및 SDK</h2>
+    <p>본 앱은 어떠한 광고, 추적, 분석 SDK도 포함하지 않습니다.
+      따라서 제3자에게 제공되는 정보가 존재하지 않습니다.</p>
+
+    <h2>5. 사용자 데이터에 대한 권리</h2>
+    <p>본 앱에 저장된 모든 데이터는 사용자가 직접 삭제할 수 있습니다.</p>
+    <ul>
+      <li>앱 내 설정에서 <strong>통계 초기화</strong>를 실행하면
+        누적 통계가 즉시 0으로 재설정됩니다.</li>
+      <li>Android 설정 → 애플리케이션 → <em>무한 사칙연산 (Infinity Calc)</em>
+        → 저장공간 → <strong>데이터 삭제</strong>를 실행하면
+        설정값과 통계가 모두 영구 삭제됩니다.</li>
+      <li>앱을 삭제하면 단말기에 저장된 모든 데이터도 함께 삭제됩니다.</li>
+    </ul>
+
+    <h2>6. 아동 보호</h2>
+    <p>본 앱은 만 13세 미만 아동을 주된 대상으로 하지 않으나,
+      광고와 외부 데이터 송신이 없으므로 모든 연령에서 안전하게 이용할 수
+      있습니다.</p>
+
+    <h2>7. 정책 변경</h2>
+    <p>본 방침이 변경될 경우 이 페이지의 개정일자가 갱신됩니다.
+      중요한 변경 사항이 있을 경우 앱 업데이트 노트에 함께 안내합니다.</p>
+
+    <h2>8. 문의</h2>
+    <p>본 방침이나 앱과 관련된 문의는 GitHub Issues를 통해 접수해
+      주시기 바랍니다.</p>
+    <ul>
+      <li>GitHub Issues:
+        <a href="https://github.com/Sevring/infinitycal/issues"
+           target="_blank" rel="noopener">
+          https://github.com/Sevring/infinitycal/issues
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      이 문서는 <a href="https://github.com/Sevring/infinitycal"
+        target="_blank" rel="noopener">Sevring/infinitycal</a>
+      저장소의 <code>docs/privacy/index.html</code> 에서 관리됩니다.
+    </footer>
+  </main>
+</body>
+</html>
